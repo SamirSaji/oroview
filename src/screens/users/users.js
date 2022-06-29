@@ -114,7 +114,7 @@ export const Users = (props) => {
               type="search"
               onChange={(e) => handleSearch(e.target.value)}
               value={search}
-              placeholder="Search by Title"
+              placeholder="Search by Name"
               className={classes.search}
               InputProps={{
                 startAdornment: (
