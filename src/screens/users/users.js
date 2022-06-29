@@ -149,7 +149,7 @@ export const Users = (props) => {
         open={userDialog?.open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }}>
-          Post Details
+          User Details
           {handleCloseDialog ? (
             <IconButton
               aria-label="close"
