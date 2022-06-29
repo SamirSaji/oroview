@@ -1,0 +1,47 @@
+{
+    "direction": "ltr",
+    "typography": {
+      "fontFamily": "oro_regular"
+    },
+    "palette": {
+      "mode": "light",
+      "primary": {
+        "light": "#8863FB1F",
+        "main": "#8863FB",
+        "dark": "#8863FB",
+        "contrastText": "#fff"
+      },
+      "secondary": {
+        "light": "#9262f9",
+        "main": "#DE57E5",
+        "dark": "#34192D",
+        "contrastText": "#fff"
+      },
+      "error": {
+        "light": "#e57373",
+        "main": "#f44336",
+        "dark": "#d32f2f",
+        "contrastText": "#fff"
+      },
+      "choose":{
+        "light": "#F0F0FA",
+        "main": "#4448C2",
+        "dark": "#EFEFEF",
+        "contrastText": "#fff"
+      },
+      "common":{
+        "white": "#FFFFFF",
+        "black": "#000000",
+        "grey": "#80808055",
+        "darkgrey": "#808080"
+      },
+      "stepper":{
+        "green": "#3CD291",
+        "grey": "#848484"
+      },
+      "button":{
+        "primary":"transparent linear-gradient(90deg, #DE57E5 0%, #BB63FB 100%) 0% 0% no-repeat padding-box"
+      }
+    }
+  }
+  

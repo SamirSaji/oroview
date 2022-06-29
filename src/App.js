@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import AppErrorBoundary from "./App.errorBoundary";
+import RouterApp from "./router";
+import AppDrawer from "./App.drawer";
+import AppTheme from "./App.theme";
+import AuthContextProvider from "./App.auth";
+import { CssBaseline } from "@mui/material";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppErrorBoundary>
+      <AppTheme>
+        <CssBaseline />
+        <AppDrawer>
+          <AuthContextProvider>
+            <RouterApp />
+          </AuthContextProvider>
+        </AppDrawer>
+      </AppTheme>
+    </AppErrorBoundary>
   );
-}
-
+};
 export default App;

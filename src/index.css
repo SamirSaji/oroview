@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+::-webkit-scrollbar {
+  width: 6px !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* this targets the default scrollbar (compulsory) */
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* Hide Number Input Roller */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(146, 151, 165, 1) !important;
+  border-radius: 24px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(146, 151, 165, 1) !important;
+}
+
+div::-webkit-scrollbar:horizontal {
+  width: 8px;
+  height: 8px;
+}
+/* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+  background-color: transparent !important;
+}
+
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+  background-color: transparent !important;
+}
+
+/* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+@font-face {
+  font-family: "oro_bold";
+  src: url("./font/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "oro_medium";
+  src: url("./font/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "oro_regular";
+  src: url("./font/Poppins-Regular.ttf");
+}
+
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_9785">Text with this font applied</p> */
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
 }

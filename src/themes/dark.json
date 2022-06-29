@@ -1,0 +1,28 @@
+{
+    "direction": "ltr",
+    "typography": {
+      "fontFamily": "oro_regular"
+    },
+    "palette": {
+      "mode": "dark",
+      "primary": {
+        "light": "#231535",
+        "main": "#231535",
+        "dark": "#34192D",
+        "contrastText": "#fff"
+      },
+      "secondary": {
+        "light": "#9262f9",
+        "main": "#8e1a86",
+        "dark": "#34192D",
+        "contrastText": "#fff"
+      },
+      "error": {
+        "light": "#e57373",
+        "main": "#f44336",
+        "dark": "#d32f2f",
+        "contrastText": "#fff"
+      }
+    }
+  }
+  
